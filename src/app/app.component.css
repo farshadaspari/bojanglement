@@ -1,0 +1,5 @@
+.router-outlet-wrapper {
+  padding: 15px;
+  padding-top: 65px;
+  min-height: calc(100vh - 63px);
+}

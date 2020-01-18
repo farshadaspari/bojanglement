@@ -1,0 +1,29 @@
+<h3>Contact</h3>
+<div class="container">
+  <div class="row">
+    <div class="col-md-5">
+      <form [formGroup]="contactForm" (ngSubmit)="contactUs()">
+        <fieldset class="form-group">
+
+          <input type="text" placeholder="Enter name" class="form-control" formControlName="name">
+        </fieldset>
+
+        <fieldset class="form-group">
+
+          <input type="email" placeholder="Enter email" class="form-control" formControlName="email" required>
+
+        </fieldset>
+        <fieldset class="form-group">
+          <textarea class="form-control" rows="5" placeholder="Enter message" formControlName="message"></textarea>
+        </fieldset>
+        <button type="submit" class="btn btn-success btn-back">Send</button>
+        <span>{{submitMessage}}</span>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div class="overlay" [ngClass]="{'is-visible': showLoader,'is-invisible': !showLoader}">
+  <div id="loader"></div>
+</div>
