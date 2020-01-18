@@ -33,12 +33,6 @@ export class PseudolocalizationComponent implements OnInit {
             }
         });
 
-
-        //let characters = value.split("");
-
-
-        
-
     }
 
     pseudoCharacter(c: string) {

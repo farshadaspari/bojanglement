@@ -1,0 +1,20 @@
+.thumbnail {
+    border: 1px solid transparent;
+    padding: 20px 0px;
+    min-width:180px;
+}
+.thumbnail:hover {
+    background:#eee;
+    border: 1px solid #ddd;
+    cursor:pointer;
+}
+
+.thumbnail .service-icon {
+    width:128px;
+    height:128px;
+}
+
+.thumbnail .caption {
+    text-align: center;
+    padding:10px 0;
+}

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-home',
@@ -8,14 +9,18 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
     showLoader: boolean = false;
 
-    constructor() { }
+    constructor(private route: Router) { }
 
     ngOnInit() {
         this.showLoader = true;
 
         setTimeout(() => {
             this.showLoader = false;
-        }, 500)
+        }, 1000);
+    }
+
+    goTo(path) {
+        this.route.navigate([path]);
     }
 
 }
