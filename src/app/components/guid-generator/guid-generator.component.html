@@ -1,0 +1,15 @@
+<h3>GUID Generator</h3>
+<div class="row">
+
+    <div class="col-md-6">
+        <textarea ref-destination [(ngModel)]="destinationValue"></textarea>
+        <button class="btn btn-primary"
+                (click)="generateGUID()">
+            Generate GUID
+        </button>
+        <button class="btn btn-default"
+                (click)="clear()">
+            Clear
+        </button>
+    </div>
+</div>

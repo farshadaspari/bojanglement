@@ -1,3 +1,13 @@
 a {
   cursor:pointer;
 }
+
+.collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    border-color:transparent;
+}

@@ -18,6 +18,7 @@ export class PseudolocalizationComponent implements OnInit {
     }
 
     pseudolocalize(value: string): void {
+        if (this.sourceValue == "") return;
         this.destinationValue = "";
 
         let lines = value.split(/\n/);

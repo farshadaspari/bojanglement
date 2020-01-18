@@ -12,6 +12,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PseudolocalizationComponent } from './components/pseudolocalization/pseudolocalization.component';
+import { GUIDGeneratorComponent } from './components/guid-generator/guid-generator.component';
 
 
 
@@ -24,6 +25,7 @@ import { PseudolocalizationComponent } from './components/pseudolocalization/pse
         AboutComponent,
         ContactComponent,
         PseudolocalizationComponent,
+        GUIDGeneratorComponent,
 
     ],
     imports: [
