@@ -12,8 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
-
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://bootswatch.com/3/paper/bootstrap.min.css" crossorigin="anonymous">
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
 
@@ -28,9 +28,37 @@
         * {
             font-family: 'Roboto', sans-serif;
         }
+
+        body {
+            background-image: linear-gradient(to bottom right, green, blue);
+            background-image: url("./assets/bg.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(-65deg,#F17C58, #E94584, #24AADB, #27DBB1,#FFDC18, #FF3706);
+            background-size: 1200% 100%;
+            animation: gradient 26s linear infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes gradient {
+            0% {
+                
+                background-position: 0%
+                
+            }
+
+            100% {
+                background-position: 100%
+            }
+        }
     </style>
 </head>
 <body>
     <app-root></app-root>
+
 </body>
+
 </html>

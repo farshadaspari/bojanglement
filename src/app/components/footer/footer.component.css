@@ -1,0 +1,6 @@
+.container-fluid {
+    background-color: transparent;
+    border-top: 1px solid;
+    border-color: transparent;
+    min-height: 63px;
+}

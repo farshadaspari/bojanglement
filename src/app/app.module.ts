@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PseudolocalizationComponent } from './components/pseudolocalization/pseudolocalization.component';
 import { GUIDGeneratorComponent } from './components/guid-generator/guid-generator.component';
+import { ImageToBase64Component } from './components/image-to-base64/image-to-base64.component';
 
 
 
@@ -24,6 +25,7 @@ import { GUIDGeneratorComponent } from './components/guid-generator/guid-generat
         FooterComponent,
         AboutComponent,
         ContactComponent,
+        ImageToBase64Component,
         PseudolocalizationComponent,
         GUIDGeneratorComponent,
 
@@ -33,7 +35,7 @@ import { GUIDGeneratorComponent } from './components/guid-generator/guid-generat
         AppRoutingModule,
         HttpClientModule,
         ReactiveFormsModule,
-        FormsModule
+        FormsModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

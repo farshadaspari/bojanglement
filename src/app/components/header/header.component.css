@@ -1,6 +1,16 @@
-a {
-  cursor:pointer;
+.navbar {
+    border: none;
+    box-shadow: none;
 }
+.navbar-default .navbar-nav > li > a {
+  cursor:pointer;
+  color:#444;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #000;
+}
+
 
 .collapsing {
     -webkit-transition: none;
@@ -9,5 +19,36 @@ a {
 }
 
 .navbar-nav > li > .dropdown-menu {
-    border-color:transparent;
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.5);
+}
+.dropdown-menu > li > a {
+    background:transparent;
+    cursor:pointer;
+    color:#444;
+}
+    .dropdown-menu > li > a:hover {
+        color: #000;
+    }
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    border-radius:0;
+
+}
+.logo {
+    cursor:pointer;
+}
+
+
+.navbar a {
+    font-weight:700;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    background-color: transparent;
 }
