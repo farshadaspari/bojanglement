@@ -5,6 +5,7 @@ import { AboutComponent } from './../components/about/about.component'
 import { ContactComponent } from './../components/contact/contact.component'
 import { PseudolocalizationComponent } from '../components/pseudolocalization/pseudolocalization.component';
 import { GUIDGeneratorComponent } from '../components/guid-generator/guid-generator.component';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -17,6 +18,7 @@ export const routes: Routes = [
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule],
+    providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
     
 })
 export class AppRoutingModule { }
