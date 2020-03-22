@@ -1,5 +1,13 @@
 .router-outlet-wrapper {
   padding: 15px;
   padding-top: 65px;
-  min-height: calc(100vh - 63px);
+  min-height: calc(100vh - 237px);
+}
+
+.app-wrapper {
+    margin:50px auto;
+    border: 1px solid transparent;
+    border-radius:10px;
+    box-shadow: 0 0 45px -5px #666;
+    width: 992px;
 }

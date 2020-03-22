@@ -1,0 +1,37 @@
+<div class="container">
+    <h4>Image To Base64 Encoding</h4>
+    <div class="row" style="margin-top:25px;">
+        <div class="col-md-6" style="margin-bottom:15px;">
+            <input #file type="file" id="myFile" (change)="loadImage(file.files)" name="filename">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="alert alert-danger" *ngIf="notAnImage">
+                The file selected is not an image. Please select a image file. (ie: jpg, png, etc.)
+            </div>
+            <div class="alert alert-danger" *ngIf="fileIsTooBig">
+                The file selected is too large. Please select a image less than 2 mb in size.
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top:15px;">
+        <div class="col-sm-4">
+            <div class="image-wrapper">
+                <img src="{{destinationValue}}" width="{{imageWidth}}" height="{{imageHeight}}" />
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <textarea ref-destination [(ngModel)]="destinationValue"></textarea>
+            <button class="btn btn-default"
+                    (click)="clear(true)">
+                Clear
+            </button>
+        </div>
+    </div>
+</div>
+<div class="overlay" [ngClass]="{'is-visible': showLoader,'is-invisible': !showLoader}">
+    <div id="loader"></div>
+</div>

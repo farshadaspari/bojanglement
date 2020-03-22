@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\components",
+    "\\src\\app\\components\\image-to-base64",
+    "\\src\\app\\routing",
+    "\\src\\config"
+  ],
+  "SelectedNode": "\\src\\app\\components\\image-to-base64",
+  "PreviewInSolutionExplorer": false
+}
