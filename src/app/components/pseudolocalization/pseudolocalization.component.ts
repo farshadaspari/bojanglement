@@ -89,7 +89,7 @@ export class PseudolocalizationComponent implements OnInit {
             case "X": return "X"; break;
             case "Y": return "Ý"; break;
             case "Z": return "Z"; break;
-            default: return " "; break;
+            default: return c; break;
         }
     }
     
